@@ -1,0 +1,53 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D & J Appointment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-heartbeat"></i>D & J Appointment</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="departments.html">Departments</a>
+            <a href="about.html">About</a>
+            <a href="forDoctors.html">For Doctors</a>
+            <a href="login.html" class="btn">LOGIN<span class="fas fa-chevron-right"></span></a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <div class="contactform">
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="your name" class="box" required>
+            <input type="number" placeholder="your number" class="box" required>
+            <input type="email" placeholder="your email" class="box" required>
+            <input type="submit" value="SEND" class="btn">
+        </form>
+    </div>
+
+    <div class="contactlogo">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            // You can replace this alert with AJAX to send data to the server for further processing.
+            alert("Thank you for contacting us. We will reach out to you soon.");
+            // Optionally, reset the form after submission
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+</body>
+</html>
